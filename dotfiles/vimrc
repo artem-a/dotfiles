@@ -1,0 +1,63 @@
+" Set vim runtimepath
+set rtp^=$HOME/bin/dotfiles/vim
+set rtp+=$HOME/bin/dotfiles/vim/after
+
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" =============== Pathogen Initialization ===============
+" This loads all the plugins in ~/.vim/bundle
+" Use tpope's pathogen plugin to manage all other plugins
+
+execute pathogen#infect()
+
+" ================ General Config ===================
+
+set number                      "Line numbers are good
+set backspace=indent,eol,start  "Allow backspace in insert mode
+set history=10000               "Store lots of :cmdline history 
+set showcmd                     "Show incomplete cmds down the bottom
+set visualbell                  "No sounds
+set autoread                    "Reload files changed outside vim
+set encoding=utf-8              "Default encoding
+
+set hidden
+
+syntax on                       "Turn on syntax highlighting
+
+" ================ Turn Off Swap Files ==============
+
+set noswapfile
+
+" =============== Color Scheme Config ===============
+
+set t_Co=256
+colorscheme ir_black
+
+" ================ Indentation ======================
+
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4                   "Tab width
+set expandtab
+
+filetype on
+filetype plugin on
+filetype indent on
+
+" Display tabs and trailing spaces visually
+set list listchars=tab:\ \ ,trail:·
+ 
+set nowrap                      "Don't wrap lines
+set linebreak                   "Wrap lines at convenient points
+
+" ================ Status Line ======================
+
+set laststatus=2		"Status line is always shown
+set noshowmode      "Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set statusline=%F%m%r%h%w\ [FF,FE,TE=%{&fileformat},%{&fileencoding},%{&encoding}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+

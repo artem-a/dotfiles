@@ -1,0 +1,5 @@
+# Load files
+
+source $HOME/bin/dotfiles/bash/env
+source $HOME/bin/dotfiles/bash/config
+source $HOME/bin/dotfiles/bash/aliases

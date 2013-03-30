@@ -1,0 +1,7 @@
+# Command Aliases
+
+# System Commands
+alias ls='ls --color=auto'
+
+# Vim Commands
+alias rbvim='vim -u ~/bin/dotfiles/vimrc-ruby'

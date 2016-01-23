@@ -11,3 +11,6 @@
 [submodule "dotfiles/vim/bundle/vim-airline"]
 	path = dotfiles/vim/bundle/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule "dotfiles/fonts"]
+	path = dotfiles/fonts
+	url = git@github.com:powerline/fonts.git

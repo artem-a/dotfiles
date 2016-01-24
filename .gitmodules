@@ -14,3 +14,9 @@
 [submodule "dotfiles/fonts"]
 	path = dotfiles/fonts
 	url = git@github.com:powerline/fonts.git
+[submodule "dotfiles/vim/bundle/vim-fugitive"]
+	path = dotfiles/vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "dotfiles/vim/bundle/vim-colors-solarized"]
+	path = dotfiles/vim/bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git

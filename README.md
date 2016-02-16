@@ -25,6 +25,7 @@ cd ~
 ln -s ~/bin/dotfiles/vimrc ~/.vimrc
 ln -s ~/bin/dotfiles/gvimrc ~/.gvimrc
 ln -s ~/bin/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/bin/dotfiles/gemrc ~/.gemrc
 ```
 
 6. Устанавливаем sudo aptitude install ncurses-term (если необходимо).
